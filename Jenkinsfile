@@ -5,7 +5,7 @@ pipeline {
   stages {
      stage('Docker Build') {
        agent any 
-       mysteps {
+       steps {
          sh 'docker build -t prafulladevops/testnginx123:latest .'
        }
      }
